@@ -1,0 +1,68 @@
+10:03:59.146 @BAS001 20180601
+10:03:59.150 @BAS002 MC*
+10:03:59.151 @BAS003 20.08.00119
+10:03:59.152 @BAS004 *DN
+10:03:59.153 @BAS005 *DV*
+10:03:59.154 @BAS006 特制螺栓 M10*22
+10:03:59.155 @BAS007 *MF403
+10:03:59.156 @BAS008 *AG403
+10:03:59.157 @BAS009 *DC
+10:03:59.162 @BAS001 20180601
+10:03:59.163 @BAS002 MC*
+10:03:59.164 @BAS003 4.0100.0054
+10:03:59.165 @BAS004 *DN
+10:03:59.166 @BAS005 *DV*
+10:03:59.167 @BAS006 六角头螺栓|ISO 4014(GB/T 5782)|M27*360-10.9
+10:03:59.169 @BAS007 *MF403
+10:03:59.170 @BAS008 *AG403
+10:03:59.171 @BAS009 *DC
+10:51:52.024 @MAI001 20180601
+10:51:52.026 @MAI002 4.0100.0054
+10:51:52.028 @MAI003 2303
+10:51:52.031 @MAI004 300
+10:51:52.039 @MAI001 20180601
+10:51:52.040 @MAI002 20.08.00119
+10:51:52.042 @MAI003 1201
+10:51:52.043 @MAI004 200
+10:54:41.168 @idx 1
+10:54:41.179 @MAI001 20180601
+10:54:41.180 @MAI002 20.08.00119
+10:54:41.181 @MAI003 1201
+10:54:41.182 @MAI004 200
+10:54:41.183 @idx 2
+11:21:23.371 '20180601' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 StudentMgr.SqlHelper.ExecuteDataTable(SqlConnection conn, String cmdText, SqlParameter[] parameters) 位置 D:\Project data\JingFeng\SiftingData\SiftingDataBll\SqlHelper.cs:行号 241
+11:21:23.373 SELECT MAI002,BAS002,MAI003,MAI004,BAS002+MAI002+BAS004+BAS005+BAS006+MAI003+BAS007+BAS008+BAS009+CONVERT(VARCHAR,MAI004) MAI FROM JIFMAI A INNER JOIN JIFBAS B ON A.MAI002=B.BAS003 WHERE MAI001='1=1 AND MAI001='20180601''
+11:22:08.593 @MAI001 
+11:22:08.596 @MAI002 4.0100.0054
+11:22:08.598 @MAI003 2305
+11:22:08.600 @MAI004 303
+11:22:08.603 @MAI001 20180601
+11:22:08.609 @MAI002 20.08.00119
+11:22:08.610 @MAI003 1201
+11:22:08.611 @MAI004 200
+11:22:08.612 @idx 2
+11:25:07.860 @MAI001 20180601
+11:25:07.862 @MAI002 4.0100.0054
+11:25:07.863 @MAI003 2309
+11:25:07.864 @MAI004 300
+11:25:07.867 @MAI001 20180601
+11:25:07.869 @MAI002 20.08.00119
+11:25:07.870 @MAI003 1201
+11:25:07.871 @MAI004 200

@@ -1,0 +1,10 @@
+D:\Project data\QingXin\SiftingData\SiftingDataEntity\bin\Debug\SiftingDataEntity.dll
+D:\Project data\QingXin\SiftingData\SiftingDataEntity\bin\Debug\SiftingDataEntity.pdb
+D:\Project data\QingXin\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.csprojResolveAssemblyReference.cache
+D:\Project data\QingXin\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.dll
+D:\Project data\QingXin\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.pdb
+D:\Project data\JingFeng\SiftingData\SiftingDataEntity\bin\Debug\SiftingDataEntity.dll
+D:\Project data\JingFeng\SiftingData\SiftingDataEntity\bin\Debug\SiftingDataEntity.pdb
+D:\Project data\JingFeng\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.csprojResolveAssemblyReference.cache
+D:\Project data\JingFeng\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.dll
+D:\Project data\JingFeng\SiftingData\SiftingDataEntity\obj\Debug\SiftingDataEntity.pdb

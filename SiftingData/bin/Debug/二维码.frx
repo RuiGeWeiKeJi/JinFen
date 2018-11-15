@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/25/2018 15:54:09" ReportInfo.Modified="06/07/2018 17:46:09" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary>
+    <OleDbDataConnection Name="Connection" ConnectionString="rijcmlqVzFGsc+BVENiWJhr/EarGmpXzxTZgUAjISq3RkDjjM5ZdA0Eie6dOX00uEjsgFbs2P21LCiEodm4mXhqbVVd2+NHmgBNATe/lpCdduLYhuBYjE8Qtw7cUjXDMsXoZ3dMCptSkWFiBcS/yanqt7iQNg==">
+      <TableDataSource Name="Table" Alias="TableOne" DataType="System.Int32" Enabled="true" SelectCommand="SELECT MAI001,MAI002,BAS002,MAI003,BAS006,MAI004,BAS002+MAI002+BAS004+BAS005+BAS006+MAI003+BAS007+BAS008+BAS009+CONVERT(VARCHAR,MAI004) MAI FROM JIFMAI A INNER JOIN JIFBAS B ON A.MAI002=B.BAS003 &#13;&#10;">
+        <Column Name="MAI002" DataType="System.String"/>
+        <Column Name="BAS002" DataType="System.String"/>
+        <Column Name="MAI003" DataType="System.String"/>
+        <Column Name="MAI004" DataType="System.Int32"/>
+        <Column Name="MAI" DataType="System.String"/>
+        <Column Name="BAS006" DataType="System.String"/>
+        <Column Name="MAI001" DataType="System.String"/>
+      </TableDataSource>
+    </OleDbDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="90" PaperHeight="38" LeftMargin="1" TopMargin="1" RightMargin="1" BottomMargin="1" Duplex="Vertical" Guides="368.55">
+    <DataBand Name="Data1" Width="332.64" Height="132.3" DataSource="Table">
+      <TextObject Name="Text1" Left="18.9" Top="9.45" Width="66.15" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="物料代码" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text2" Left="85.05" Top="9.45" Width="103.95" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="[TableOne.MAI002]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <BarcodeObject Name="Barcode1" Left="198.45" Top="9.45" Width="116" Height="116" AutoSize="false" DataColumn="TableOne.MAI" ShowText="false" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+      <TextObject Name="Text3" Left="18.9" Top="28.35" Width="66.15" Height="47.25" Border.Lines="All" Border.Style="Dot" Text="物料名称" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text4" Left="85.05" Top="28.35" Width="103.95" Height="47.25" Border.Lines="All" Border.Style="Dot" Text="[TableOne.BAS006]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+      <TextObject Name="Text5" Left="18.9" Top="75.6" Width="66.15" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="批次号" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text6" Left="85.05" Top="75.6" Width="103.95" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="[TableOne.MAI003]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text7" Left="18.9" Top="94.5" Width="66.15" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="数量" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text8" Left="85.05" Top="94.5" Width="103.95" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="[TableOne.MAI004]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text9" Left="18.9" Top="113.4" Width="66.15" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="日期" HorzAlign="Right" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text10" Left="85.05" Top="113.4" Width="103.95" Height="18.9" Border.Lines="All" Border.Style="Dot" Text="[TableOne.MAI001]" Format="Date" Format.Format="d" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>
